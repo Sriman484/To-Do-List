@@ -1,0 +1,120 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(h.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.head {
+    margin-top: 20px;
+    text-align: center;
+    animation: change 5s infinite;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+input {
+    height: 25px;
+    width: 500px;
+    background-color: rgba(201, 201, 201, 0.89);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 25px;
+    width: 70px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 30px;
+    margin: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
+    width: 600px;
+    text-align: center;
+    border-radius: 20px;
+    animation: scaleDown 1s ease forwards;
+    overflow: hidden; /* Ensures no overflow from the container */
+}
+
+ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.container ul li {
+    list-style-type: none;
+    background-color: rgba(201, 201, 201, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word; /* Ensures long words break into the next line */
+    overflow: hidden; /* Prevents overflowing content */
+    max-width: 100%; /* Makes sure the li stays within the container */
+}
+
+.container ul li .text {
+    flex-grow: 1; /* Makes the text take up the remaining space */
+    word-wrap: break-word; /* Breaks long text onto the next line */
+    text-align: left; /* Aligns text to the left */
+    margin-right: 10px; /* Adds space between text and button */
+}
+
+ul li button {
+    height: 25px;
+    width: 70px;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes change {
+    0% {
+        color: #28221e;
+    }
+    25% {
+        color: blueviolet;
+    }
+    50% {
+        color: #e1999f;
+    }
+    75% {
+        color: #88a9c3;
+    }
+    100% {
+        color: plum;
+    }
+}
+
+@keyframes scaleDown {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
