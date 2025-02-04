@@ -139,7 +139,6 @@ ul li button:hover{
         width: 18px;
     }
 }
-
 @media (max-width: 480px) {
     .head {
         font-size: 1.5rem;
