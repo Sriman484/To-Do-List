@@ -18,8 +18,6 @@ function add() {
     inp.value = "";
 }
 
-
-
 function del(event) {
     event.target.parentElement.style.textDecoration = "line-through";
 }
